@@ -1,0 +1,33 @@
+h2 { /* Este estilo afecta a todos los h2 de INDEX2.html */
+    font-size: 60px; 
+    color: blue;
+    background-color: aquamarine;
+}
+
+.textomorado { /* Esta es una clase CCS que aplica color morado y fuente Times New Roman */
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.claseContenedorDiv1 { /* Afectara a algunos contenedores div */
+    font-size: 40px;
+    width: 900px;
+    height: 600px;
+    background-color: rgb(42, 165, 52);
+}
+
+#fondonaranja { /* Identificador que solo afecta a una etiqueta */
+    background-color: orange;
+    font-size: 30px;
+    text-align: center;
+}
+
+.textomorado:hover {
+    background-color:chocolate;
+    color: darkgreen;
+}
+
+.claseContenedorDiv1::first-letter { /* seudoelemento que afecta a la primera letra */
+    font-size: 80px;
+    color: rgb(238, 52, 28);
+}
