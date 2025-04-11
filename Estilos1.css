@@ -31,3 +31,49 @@ h2 { /* Este estilo afecta a todos los h2 de INDEX2.html */
     font-size: 80px;
     color: rgb(238, 52, 28);
 }
+
+.clase_Static {
+    font-size: 20px;
+    background-color: aqua;
+    position: static;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 200px;
+}
+
+.clase_Static2 {
+    font-size: 20px;
+    background-color: aqua;
+    position: static;
+    top: 20px; /* Esto no funciona en static */
+    left: 80px; /* Esto no funciona en static */ 
+    right: 200px; /* Esto no funciona en static */
+}
+
+.clase_Relative{
+    font-size: 20px;
+    background-color: aquamarine;
+    height: 250px;
+    width:200px;
+}
+.clase_Relative:hover {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: -5;
+    /* z-index para colocar adelante (+) o atras (-) en profundidad respecto a otro elemento*/
+}
+
+.clase_Relative2{
+    font-size: 20px;
+    background-color: aquamarine;
+    height: 250px;
+    width:200px;
+}
+.clase_Relative2:hover {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
