@@ -351,9 +351,9 @@ Proporcionar a los trabajadores capacitación y recursos necesarios para lograr 
 
 <h2> FORMULARIO DE REGISTRO </h2>
 <form action="TRABAJOCLASE.HTML" method="post">
-  <p> <label for="nombre"> Nombre: <input type="text" id="nombre"></label></p>
+  <p> <label for="nombre"> Nombre: <input type="text" id="nombre" required autofocus></label></p>
   <p> <label for="apellido"> Apellido: <input type="text" id="nombre"></label></p>
-  <p> <label for="edad"> Edad: <input type="text" id="nombre"></label></p>
+  <p> <label for="edad"> Edad: <input type="number" id="nombre" min="18" max="35"></label></p>
   <p> <label for="observacion"> Observacion: <textarea id="observacion" 
     style="height: 180px; width: 300px; font-size: 15px;"></textarea></label></p>
     
@@ -400,7 +400,32 @@ Proporcionar a los trabajadores capacitación y recursos necesarios para lograr 
   <label for="fecha"> SELECCIONE FECHA: 
     <input style="font-size:15px" type="date" name="fecha" id="fecha">
   </label>
-<br><br>
+  <br><br>
+
+  <label for="fecha"> SELECCIONE CLAVE:
+    <input style="font-size:15px;" type="password" name="clave" id="clave" 
+    minlength="5" maxlength="10">
+  </label>
+  <br><br>
+
+  <label for="resetear"> RESETEAR:
+    <input style="font-size:15px;" type="reset" name="resetear" id="resetear">
+  </label>
+
+  <br><br>
+
+  <label for="resetear"> TIEMPO:
+    <input style="font-size:15px;" type="time" name="tiempo" id="tiempo">
+  </label>  
+  
+  <br><br>
+
+  <label for="email"> Ingrese email:
+    <input style="font-size:15px;" type="email" name="email" id="email" placeholder="@certus.edu.pe">
+  </label> 
+
+
+  <br><br>
   <button type="submit" style="font-size:15px ;" > Enviar </button>
 
 </form>
